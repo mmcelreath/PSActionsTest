@@ -86,3 +86,5 @@ function Wait-SaltJob {
 
 }
 
+$UserInput = Read-Host "Please enter your secure code"
+$EncryptedInput = ConvertTo-SecureString -String $UserInput -AsPlainText -Force
