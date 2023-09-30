@@ -15,6 +15,10 @@ jobs:
         with:
           node-version: '14'
       - run: npm help
+      - name: Terraform Version
+        shell: pwsh
+        run: |
+          terraform version
 
   Run-PSScriptAnalyzer-on-Windows:
     name: Run PSScriptAnalyzer on Windows
