@@ -1,0 +1,28 @@
+name: Run commands on different operating systems
+
+on: workflow_dispatch
+
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
+
+jobs:
+  
+  Check-Versions:
+    name: Run Version Checks
+    runs-on: windows-latest
+    steps:
+      
+      - name: Check Packer Version
+        shell: pwsh
+        run: |
+          Write-Warning "Checking Packer Version"
+          packer --version
+      
+      - name: Check Terraform Version
+        shell: pwsh
+        run: |
+          Write-Warning "Checking Packer Version"
+          terraform --version
