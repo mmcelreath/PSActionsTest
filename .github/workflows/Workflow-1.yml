@@ -12,7 +12,7 @@ jobs:
   
   Check-Versions-Linux:
     name: Run Version Checks
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       
       - name: Check Packer Version
