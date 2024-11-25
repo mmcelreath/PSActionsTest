@@ -41,5 +41,7 @@ jobs:
       - name: Check Terraform Version
         shell: pwsh
         run: |
+          Write-Warning "Installing Terraform"
+          choco install terraform -y
           Write-Warning "Checking Packer Version"
           terraform --version
