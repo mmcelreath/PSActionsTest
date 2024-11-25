@@ -11,7 +11,7 @@ on: workflow_dispatch
 jobs:
   
   Check-Versions-Linux:
-    name: Run Version Checks
+    name: Run Version Checks on Linux
     runs-on: ubuntu-latest
     steps:
       
@@ -28,7 +28,7 @@ jobs:
           terraform --version
   
   Check-Versions-Windows:
-    name: Run Version Checks
+    name: Run Version Checks on Windows
     runs-on: windows-latest
     steps:
       
